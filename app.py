@@ -42,6 +42,7 @@ if page == "Data Exploration":
 
     st.header('Breakdown of Marital Status Among Depressed Individuals')
     marital_fig = create_marital_status_plot(data)
+    st.pyplot(marital_fig)
   
     st.header('Breakdown of Chronic Medical Conditions and Depression')
     medical_fig = create_medical_conditions_plot(data)
